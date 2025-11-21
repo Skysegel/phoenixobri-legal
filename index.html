@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhoeniXobri – Legal Information</title>
+  <style>
+    :root {
+      --accent: #b45309;
+      --accent-soft: #fef3c7;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #fffbeb 0, #f9fafb 40%, #f3f4f6 100%);
+      color: var(--text);
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .brand img {
+      height: 56px;
+      width: auto;
+    }
+    .brand-text-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .brand-text-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .motto {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.5rem;
+      color: var(--text);
+    }
+    p.lead {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .lang-toggle {
+      display: inline-flex;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      padding: 0.15rem;
+      background: #fff;
+      margin-bottom: 1.75rem;
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-bottom: 2.5rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.96);
+      border-radius: 0.9rem;
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.3rem;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.04);
+    }
+    .card h2 {
+      margin: 0 0 0.25rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+    .card p {
+      margin: 0 0 0.8rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .card a::after {
+      content: "→";
+      font-size: 0.9em;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+    .meta strong { color: var(--text); }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+    .legal-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .legal-list li { margin-bottom: 0.25rem; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    @media (max-width: 640px) {
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .motto { align-self: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <img src="phoenix_tp.png" alt="PhoeniXobri Logo" />
+        <div class="brand-text">
+          <div class="brand-text-title">PhoeniXobri</div>
+          <div class="brand-text-sub">Alcohol-free tracking &amp; community support</div>
+        </div>
+      </div>
+      <div class="motto">Stay sober. See results.</div>
+    </div>
+  </header>
+  <main>
+    <div id="lang-de" class="lang-section active">
+      <h1>Rechtliche Informationen zur App PhoeniXobri</h1>
+      <p class="lead">Hier findest du die aktuelle Datenschutzerkl&auml;rung und die Nutzungsbedingungen (AGB) f&uuml;r die mobile App <strong>PhoeniXobri</strong>.</p>
+      <div class="lang-toggle" aria-label="Sprachauswahl">
+        <button type="button" class="active" data-lang="de">Deutsch</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+      <div class="section-label">&Uuml;bersicht</div>
+      <div class="grid">
+        <section class="card">
+          <h2>Datenschutzerkl&auml;rung</h2>
+          <p>Informationen dazu, welche Daten verarbeitet werden, auf welcher Rechtsgrundlage dies geschieht und welche Rechte du nach DSGVO hast.</p>
+          <a href="Phoenixobri-legal.html#datenschutz">Zur Datenschutzerkl&auml;rung</a>
+        </section>
+        <section class="card">
+          <h2>Nutzungsbedingungen (AGB)</h2>
+          <p>Regeln f&uuml;r die Nutzung der App PhoeniXobri, insbesondere Haftung, Community-Nutzung und medizinischer Haftungsausschluss.</p>
+          <a href="Phoenixobri-legal.html#agb">Zu den Nutzungsbedingungen</a>
+        </section>
+      </div>
+      <div class="card">
+        <div class="section-label">Meta</div>
+        <p class="meta">
+          <strong>Verantwortlich:</strong> Daniel R&ouml;&szlig;mann (PhoeniXobri), Lilienthal (Niedersachsen), Deutschland<br />
+          <strong>Kontakt:</strong> <a href="mailto:PhoeniXobri@gmx.de">PhoeniXobri@gmx.de</a><br />
+          <strong>Letzte Aktualisierung:</strong> November 2025<br />
+          <strong>Geltungsbereich:</strong> Mobile App &bdquo;PhoeniXobri&ldquo;
+        </p>
+      </div>
+    </div>
+
+    <div id="lang-en" class="lang-section">
+      <h1>Legal Information for the PhoeniXobri App</h1>
+      <p class="lead">Here you can find the current privacy policy and terms of use for the <strong>PhoeniXobri</strong> mobile application.</p>
+      <div class="lang-toggle" aria-label="Language selection">
+        <button type="button" data-lang="de">Deutsch</button>
+        <button type="button" class="active" data-lang="en">English</button>
+      </div>
+      <div class="section-label">Overview</div>
+      <div class="grid">
+        <section class="card">
+          <h2>Privacy Policy (German)</h2>
+          <p>The full privacy policy is currently available in German. It describes what data is processed, on which legal basis and which rights you have under the GDPR.</p>
+          <a href="Phoenixobri-legal.html#datenschutz">Open privacy policy (DE)</a>
+        </section>
+        <section class="card">
+          <h2>Terms of Use (German)</h2>
+          <p>The terms of use are currently provided in German and describe the conditions for using the PhoeniXobri app.</p>
+          <a href="Phoenixobri-legal.html#agb">Open terms of use (DE)</a>
+        </section>
+      </div>
+      <div class="card">
+        <div class="section-label">Meta</div>
+        <p class="meta">
+          <strong>Controller:</strong> Daniel R&ouml;&szlig;mann (PhoeniXobri), Lilienthal, Germany<br />
+          <strong>Contact:</strong> <a href="mailto:PhoeniXobri@gmx.de">PhoeniXobri@gmx.de</a><br />
+          <strong>Last update:</strong> November 2025<br />
+          <strong>Scope:</strong> Mobile app &ldquo;PhoeniXobri&rdquo;
+        </p>
+      </div>
+    </div>
+  </main>
+  <script>
+    (function() {
+      const sections = {
+        de: document.getElementById('lang-de'),
+        en: document.getElementById('lang-en')
+      };
+      const buttons = document.querySelectorAll('.lang-toggle button');
+      function setLang(lang) {
+        Object.keys(sections).forEach(key => {
+          sections[key].classList.toggle('active', key === lang);
+        });
+        buttons.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        document.documentElement.lang = lang === 'de' ? 'de' : 'en';
+      }
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => setLang(btn.dataset.lang));
+      });
+    })();
+  </script>
+</body>
+</html>
